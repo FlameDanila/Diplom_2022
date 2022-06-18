@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RTK-ONline</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/tets_bogdan.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="sticky-top">
+            <div class="container-fluid" style="background-color: #4887C1;height:100px;">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li>
+                            <img id="mainImage" class="main-image" src="images/image 2.png" style="background-color: white" alt="Лого" asp-area="" asp-controller="Home" asp-action="Index">
+                        </li>
+                        <lic lass="nav-item" style="position:absolute; right:60px; top:30px;" > 
+                            <a class="nav-link text-dark" asp-area="" asp-controller="mind" asp-action="magic">Регистрация</a>
+                        </lic>
+                        <li class="nav-item" style="position:absolute; right:15px; top:30px;">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="mind" asp-action="magic">Вход</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+    <footer class = "fixed-bottom" style="height:50px">
+         <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item" style="position:absolute; left:15px; bottom:15px;">
+                Название команды разработчиков "DeadDealTime"
+            </li>
+            <li class="nav-item" style="position:absolute; right:15px; bottom:15px;"> 
+                mac72.to@yandex.ru +79222667932,      
+                dimitron228@gmail.com, +79081153220
+            </li>
+        </ul>
+    </footer>
+</html>
