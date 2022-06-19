@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Регистрация";
+}
+<header style="height:50px"></header>
+<form action="./DataAggregation" method="post">
+    <div class="mb-3">
+        <label class="form-label">Имя:</label>
+        <input type="text" class="form-control" name="firtsName" aria-describedby="firstnamehelp">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Фамилия:</label>
+        <input type="text" class="form-control" name="secondName" aria-describedby="secondnamehelp">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Отчесто:</label>
+        <input type="text" class="form-control" name="middleName" aria-describedby="middlenamehelp">
+    </div>
+        <div class="mb-3">
+        <label class="form-label">Дата рождения:</label>
+        <input type="date" class="form-control" name="date" aria-describedby="dateHelp">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Место учебы(работы):</label>
+        <input type="text" class="form-control" name="mesto" aria-describedby="jobhelp">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Номер телефона:</label>
+        <input type="tel" class="form-control" name="phone" aria-describedby="phoneHelp">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Согласие на обработку персональных данных:</label>
+        <input type="file" class="form-control" name="docs">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Почта:</label>
+        <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+    </div>
+        <div class="mb-3">
+        <label class="form-label">Логин:</label>
+        <input type="text" class="form-control" name="login" aria-describedby="login">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Пароль:</label>
+        <input type="password" class="form-control" name="password" aria-describedby="password">
+    </div>
+        <div class="mb-3">
+        <label class="form-label">Повторите пароль:</label>
+        <input type="password" class="form-control" name="repeatPassword" aria-describedby="password">
+    </div>
+    <button style="width:200px" id="qqq" type="submit" class="btn btn-primary">Зарегистрироваться</button>
+</form>
