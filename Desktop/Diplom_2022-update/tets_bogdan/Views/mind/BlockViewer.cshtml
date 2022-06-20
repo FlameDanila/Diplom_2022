@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Авторизация";
+}
+<header style="height:50px"></header>
+
+<form action="./BlockViewer" method="post" style="position:center">
+    <img id="mainImage" class="main-image " src="~/images/f.jpg" height="300" width="500" alt="поле" asp-area="" asp-controller="Home" asp-action="Index">
+    <header style="height:50px"></header>
+    <div class="mb-3">
+        <label class="form-label">Очки за уступы: </label>
+        <input type="number" class="form-control" name="chalangesScore">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Очки за лестницы:</label>
+        <input type="number" class="form-control" name="laddersScore">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Очки за вопросы:</label>
+        <input type="number" class="form-control" name="questionsScore">
+    </div>
+        <div class="mb-3">
+        <label class="form-label">Очки за башню:</label>
+        <input type="number" class="form-control" name="towerScore">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Штрафные очки:</label>
+        <input type="number" class="form-control" name="penaltyScore">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Номер команды:</label>
+        <input type="number" class="form-control" name="team">
+    </div>
+    <button style="width:200px" id="qqq1" type="submit" class="btn btn-primary">Зафиксировать изменения</button>
+</form>
